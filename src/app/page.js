@@ -18,7 +18,7 @@ export default function Home() {
         
 
 
-        <Link href="/sign-in">
+        {/* <Link href="/sign-in">
         <div className="mt-8">
           <button className="group flex w-full items-center justify-center rounded-lg bg-sky-500 px-4 py-3 font-medium text-white transition-all duration-200 hover:bg-sky-600 dark:bg-sky-600 dark:hover:bg-sky-700">
             Login
@@ -26,7 +26,7 @@ export default function Home() {
           </button>
           
         </div>
-        </Link>
+        </Link> */}
         
       </div>
 
