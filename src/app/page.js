@@ -1,5 +1,7 @@
 import { Sparkles, ChevronRight } from "lucide-react"
 import Link from "next/link";
+import { SignedOut } from "@clerk/nextjs";
+
 
 export default function Home() {
   return (
@@ -15,18 +17,21 @@ export default function Home() {
           Welcome to My App
         </h1>
 
+        <SignedOut>
+            <Link href="/sign-in">
+            <div className="mt-8">
+              <button className="group flex w-full items-center justify-center rounded-lg bg-sky-500 px-4 py-3 font-medium text-white transition-all duration-200 hover:bg-sky-600 dark:bg-sky-600 dark:hover:bg-sky-700">
+                Custom Sign in
+                <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+              </button>
+              
+            </div>
+            </Link>
+        </SignedOut>
+
         
 
 
-        {/* <Link href="/sign-in">
-        <div className="mt-8">
-          <button className="group flex w-full items-center justify-center rounded-lg bg-sky-500 px-4 py-3 font-medium text-white transition-all duration-200 hover:bg-sky-600 dark:bg-sky-600 dark:hover:bg-sky-700">
-            Login
-            <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-          </button>
-          
-        </div>
-        </Link> */}
         
       </div>
 
